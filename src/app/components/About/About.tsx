@@ -1,7 +1,9 @@
 'use client'
+
 import Image from 'next/image';
+
 import { Container } from "../Container";
-import { TopSideAbout, List, BottomSideAbout, SectionAbout, WrapperTexts, Tag, TextList, Title, Video, VideoText, WrapperAbout, WrapperImages, WrapperLeftSide, WrapperList, WrapperRightSide } from "./About.style";
+import { TopSideAbout, List, BottomSideAbout, SectionAbout, WrapperTexts, Tag, TextList, Title, Video, VideoText, WrapperAbout, WrapperImages, WrapperTopSide, WrapperList, WrapperBottomSide } from "./About.style";
 
 import CheckIcon from '../../../assets/icon/check.svg';
 import ArrowNextIcon from '../../../assets/icon/arrow-next.svg';
@@ -15,7 +17,7 @@ export function About(){
             <Container>
                 <WrapperAbout>
                     <TopSideAbout>
-                        <WrapperLeftSide>
+                        <WrapperTopSide>
                             <WrapperTexts>
                                 <Tag>Sobre a empresa</Tag>
                                 <Title>Criando e inovando desde 1988</Title>
@@ -38,16 +40,16 @@ export function About(){
                                 <Image  src={PlayIcon} alt='Ícone play' className='icon-play'/>
                                 <Image  src={ThumbnailVideo} alt='Capa vídeo' className='thumbnail'/>
                             </Video>
-                        </WrapperLeftSide>
+                        </WrapperTopSide>
                     </TopSideAbout>
                     <BottomSideAbout>
-                        <WrapperRightSide>
-                        <WrapperImages>
-                                <Image src={ArrowNextIcon} alt='Ícone seta'/>
-                                <Image src={SupplementaryImage} alt='Mulher usando celular, ilustração 3D'/>
+                        <WrapperBottomSide>
+                            <WrapperImages>
+                                <Image src={ArrowNextIcon} alt='Ícone seta' className='nextIcon'/>
+                                <Image src={SupplementaryImage} alt='Mulher usando celular, ilustração 3D' className='woman3d'/>
                             </WrapperImages>
                             <VideoText>Suscipit pellentesque praesent auctor molestie massa nunc vitae. Felis eget est ut gravida in maecenas. Tempus in in in congue proin.<br/><br/>Sem in feugiat id dui bibendum. Nunc ut mauris congue amet. Facilisis amet enim pellentesque eu suspendisse diam sit. Bibendum pharetra malesuada aliquam hendrerit consectetur neque. <strong>Gravida rhoncus enim a sodales</strong> feugiat senectus aenean felis. Vitae purus, amet semper pulvinar.</VideoText>
-                        </WrapperRightSide>
+                        </WrapperBottomSide>
                     </BottomSideAbout>
                 </WrapperAbout>
             </Container>

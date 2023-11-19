@@ -4,12 +4,17 @@ import theme from '../../theme';
 export const SectionFooter = styled.footer`
     padding: 5.4rem 0rem;
     background-color: ${theme.colors.gray1};
+    text-align: center;
 `
 
 export const WrapperFooter = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media(max-width: 1100px){
+        flex-direction: column;
+        gap: 3.2rem;
+    }
 `
 
 export const Logo = styled.div`

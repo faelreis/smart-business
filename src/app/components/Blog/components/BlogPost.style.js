@@ -63,14 +63,14 @@ export const WrapperAutor = styled.div`
 export const Wrapperassignment = styled.div`
 `
 
-export const Name = styled.div`
+export const Name = styled.h4`
     margin-bottom: 0.4rem;
     font-size: 1.6rem;
     font-weight: 600;
     color: ${theme.colors.dark700};
 `
 
-export const Job = styled.div`
+export const Job = styled.h5`
     color: ${theme.colors.dark400};
     font-size: 1.4rem;
     font-weight: 400;

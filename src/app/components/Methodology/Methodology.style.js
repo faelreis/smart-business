@@ -3,16 +3,29 @@ import theme from '../../theme';
 
 export const SectionMethodology = styled.section`
     padding: 12rem 0rem;
+    @media(max-width: 1000px){
+        padding: 6.4rem 0rem;
+    }
 `
 
 export const WrapperMethodology = styled.div`
     display: flex;
     gap: 13.6rem;
+    @media(max-width: 1000px){
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
 `
 
 export const LeftSide = styled.div`
     width: 100%;
     max-width: 59.2rem;
+    @media(max-width: 1000px){
+        text-align: center;
+        max-width: 46rem;
+        font-size: 3.8rem;
+    }
 `
 
 export const Tag = styled.span`
@@ -24,14 +37,49 @@ export const Tag = styled.span`
 export const Title = styled.h2`
     font-size: 48px;
     font-weight: 400;
-    color: ${theme.colors.dark700}
+    color: ${theme.colors.dark700};
+    @media(max-width: 1000px){
+        font-size: 3.8rem;
+    }
+    @media(max-width: 700px){
+        font-size: 2.8rem;
+    }
+    @media(max-width: 375px){
+        font-size: 2.4rem;
+    }
 `
 
 export const WrapperImages = styled.div`
+    width: 100%;
+    max-width: 38.4rem;
     margin-top: 6.7rem;
     display: flex;
     align-items: end;
     gap: 3.2rem;
+    @media(max-width: 1080px){
+        .laptopMockup{
+            max-width: 80%;
+        }
+    }
+    @media(max-width: 600px){
+        .laptopMockup{
+            max-width: 70%;
+        }
+    }
+    @media(max-width: 520px){
+        .laptopMockup{
+            max-width: 60%;
+        }
+    }
+    @media(max-width: 400px){
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+        .laptopMockup{
+            max-width: 100%;
+        }
+    }
+
 `
 
 export const WrapperSalesNumber = styled.div`
@@ -48,6 +96,9 @@ export const SalesNumber = styled.h3`
     margin-top: 0.8rem;
     font-size: 2.4rem;
     font-weight: 400;
+    @media(max-width: 600px){
+        font-size: 2.0rem;
+    }
 `
 
 export const SalesDesc = styled.p`
@@ -82,6 +133,9 @@ export const Step = styled.div`
         height: 6.4rem;
         bottom: -6.5rem;
         left: 3.2rem;
+    }
+    @media(max-width: 470px){
+        gap: 1.4rem;
     }
 `
 
@@ -126,10 +180,25 @@ export const StepTitle = styled.h4`
     font-weight: 400;
     margin-bottom: 0.6rem;
     color: ${theme.colors.dark700};
+    @media(max-width: 470px){
+        font-size: 1.8rem;
+    }
+    @media(max-width: 370px){
+        font-size: 1.6rem;
+    }
 `
 
 export const StepDesc = styled.p`
     font-size: 1.8rem;
     font-weight: 400;
     color: ${theme.colors.dark300};
+    @media(max-width: 1080px){
+        font-size: 1.6rem;
+    }
+    @media(max-width: 470px){
+        font-size: 1.4rem;
+    }
+    @media(max-width: 430px){
+        font-size: 1.2rem;
+    }
 `

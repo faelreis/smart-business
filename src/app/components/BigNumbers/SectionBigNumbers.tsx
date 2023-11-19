@@ -1,5 +1,9 @@
 'use client'
+
 import Image from 'next/image';
+
+import CountUp from 'react-countup';
+
 import { Container } from "../Container";
 import { Autor, AutorJob, AutorName, BigNumber, BigNumberDesc, BigNumberText, DividerLine, LeftSideBigNumbers, RectangleBottomBg, RectangleTopBg, RightSideBigNumbers, SectionBigNumbers, SpanText, TestimonialText, WrapperAutor, WrapperBigNumber, WrapperQuote, WrappperSectionBigNumbers } from "./BigNumbers.style";
 
@@ -29,15 +33,15 @@ export function BigNumbers(){
                     <RightSideBigNumbers>
                         <WrapperBigNumber>
                             <BigNumber>
-                                <BigNumberText>120</BigNumberText>
+                                <BigNumberText><CountUp start={100} end={120} duration={5}  /></BigNumberText>
                                 <BigNumberDesc>Projeto realizado 2021</BigNumberDesc>
                             </BigNumber>
                             <BigNumber>
-                                <BigNumberText>12</BigNumberText>
+                            <BigNumberText><CountUp start={3} end={12} duration={5}  /></BigNumberText>
                                 <BigNumberDesc>Escritórios no Brasil</BigNumberDesc>
                             </BigNumber>
                             <BigNumber>
-                                <BigNumberText>325m</BigNumberText>
+                            <BigNumberText><CountUp start={250} end={325} duration={5} />m</BigNumberText>
                                 <BigNumberDesc>Faturamento</BigNumberDesc>
                             </BigNumber>
                         </WrapperBigNumber>

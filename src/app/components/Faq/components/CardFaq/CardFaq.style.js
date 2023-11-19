@@ -3,6 +3,7 @@ import theme from '../../../../theme';
 
 
 export const Card = styled.a`
+    width: 100%;
     padding: 5.7rem 4.7rem;
     background-color: ${theme.colors.gray1};
     display: flex;

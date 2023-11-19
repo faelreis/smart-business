@@ -11,24 +11,6 @@ export const WrapperTopBarMessage = styled.div`
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    span{
-        flex-grow: 1;
-        display: inline-block;
-        color: ${theme.colors.gray1};
-        font-size: 1.4rem;
-        font-weight: 400;
-        transition: opacity .3s ease;
-
-        &:hover{
-        opacity: 80%;
-        cursor: pointer;
-    }
-    }
-    strong{
-        font-size: 1.4rem;
-        text-decoration: underline;
-        font-weight: 400;
-    }
 
     .button--close{
         transition: all .3s ease-in-out;
@@ -48,5 +30,31 @@ export const WrapperTopBarMessage = styled.div`
         span{
             width: 200px;
         }
+    }
+`
+
+export const Message = styled.span`
+        flex-grow: 1;
+        display: inline-block;
+        color: ${theme.colors.gray1};
+        font-size: 1.4rem;
+        font-weight: 400;
+        transition: opacity .3s ease;
+        &:hover{
+            opacity: 80%;
+            cursor: pointer;
+        }
+        strong{
+            font-size: 1.4rem;
+            text-decoration: underline;
+            font-weight: 400;
+        }
+
+    @media(max-width: 450px){
+        width: 250px;
+    }
+
+    @media(max-width: 280px){
+        width: 200px;
     }
 `

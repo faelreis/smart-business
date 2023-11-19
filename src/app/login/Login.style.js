@@ -4,27 +4,43 @@ import theme from '../theme';
 export const LoginPage = styled.section`
     height: 100vh;
     overflow: hidden;
+    @media(max-width: 970px){
+        overflow: auto;
+    }
 `
 
 export const WrapperLogin = styled.div`
     display: flex;
+    @media(max-width: 970px){
+        flex-direction: column-reverse;
+    }
 `
 
 export const LeftSide = styled.div`
-    width: 100%;
-    max-width: 52.8rem;
+    width: 80%;
     height: 100vh;
     background-color: ${theme.colors.primaryMain};
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media(max-width: 1060px){
+        width: 100%;
+    }
+    @media(max-width: 970px){
+        height: 100%;
+    }
 `
 
 export const WrapperInfosBrand = styled.div`
     padding: 8.8rem 11.2rem 0px 8.8rem;
+    @media(max-width: 970px){
+        padding: 5rem;
+    }
 `
 
 export const Title = styled.h1`
+    width: 100%;
+    max-width: 32.8rem;
     font-size: 3.2rem;
     font-weight: 400;
     line-height: 125%;
@@ -33,6 +49,12 @@ export const Title = styled.h1`
     strong{
         font-weight: 600;
         font-size: 3.2rem;
+    }
+    @media(max-width: 1060px){
+        font-size: 2.8rem;
+        strong{
+            font-size: 2.8rem;
+        }
     }
 `
 
@@ -46,6 +68,15 @@ export const RightSide = styled.div`
         img{
             transform: rotate(-180deg);
         }
+    }
+    @media(max-width: 1423px){
+        padding: 8.8rem 10rem 18.7rem 10rem;
+    }
+    @media(max-width: 1260px){
+        padding: 8.8rem 6rem 18.7rem 6rem;
+    }
+    @media(max-width: 970px){
+        padding: 5rem;
     }
 `
 
@@ -69,6 +100,9 @@ export const Form = styled.form`
         font-weight: 400;
         margin-bottom: 3.5rem;
         text-align: center;
+    }
+    @media(max-width: 970px){
+        max-width: 100%;
     }
 `
 
@@ -109,6 +143,7 @@ export const Options = styled.div`
     align-items: center;
     justify-content: space-between;
     margin-bottom: 3.2rem;
+    
 
 `
 
@@ -154,6 +189,9 @@ export const DividerLine = styled.div`
     margin-top: 3.2rem;
     width: 100%;
     max-width: 47.8rem;
+    @media(max-width: 970px){
+        max-width: 100%;
+    }
 `
 
 export const DivOr = styled.div`
@@ -176,6 +214,7 @@ export const ButtonGoogle = styled.a`
     background-color: #6D789F10;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1.6rem;
     padding: 1.7rem 16.7rem 1.7rem 14.2rem;
     margin-bottom: 3.2rem;
@@ -186,10 +225,16 @@ export const ButtonGoogle = styled.a`
         text-align: left;
         font-size: 1.4rem;
         font-weight: 400;
-        width: 100%;
     }
     &:hover{
         background-color: #6D789F25;
+    }
+    @media(max-width: 970px){
+        width: 100%;
+        padding: 2rem 1rem;
+        span{
+            text-align: center;
+        }
     }
 `
 

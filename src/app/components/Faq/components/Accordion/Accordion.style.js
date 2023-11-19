@@ -12,6 +12,7 @@ const fadeIn = keyframes`
 `;
 
 export const CardAccordion = styled.div`
+    text-align: left;
     padding: 4.8rem 0rem;
     border-bottom: 0.15rem solid ${theme.colors.gray2};
     cursor: pointer;
@@ -32,6 +33,9 @@ export const Panel = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    img{
+        margin-left: 1rem;
+    }
 `
 
 export const WrapperInfos = styled.div`

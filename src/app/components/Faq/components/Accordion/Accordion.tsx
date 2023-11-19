@@ -19,7 +19,7 @@ export function Accordion() {
           <Number>01</Number>
           <Question>Há algum conteúdo que não migrará com a minha Página?</Question>
         </WrapperInfos>
-        <Image src={PlusIcon} alt="Ícone maximizar" />
+        <Image src={PlusIcon} alt="Ícone maximizar"/>
       </Panel>
         <Answer className={`element ${isVisible ? 'visible' : 'hidden'}`}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

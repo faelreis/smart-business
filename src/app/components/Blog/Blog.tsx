@@ -1,17 +1,18 @@
 'use client'
 
-// Importações
-import React, { useRef } from 'react';
 import Image from 'next/image';
+
+import React, { useRef } from 'react';
+
 import { Container } from '../Container';
 import { BottomSide, NavigateButtons, SectionBlog, Tag, Title, TopSide, WrapperBlog, WrapperTitle } from './Blog.style';
+
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import { BlogPost } from './components/BlogPost';
 import { LineButton } from '../Button';
 
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -58,7 +59,7 @@ export function Blog() {
               <Tag>Nosso blog</Tag>
               <Title>Notícias do mundo da tecnologia</Title>
             </WrapperTitle>
-            <LineButton href="#">
+            <LineButton className='btnLine'>
               <span>Conheça nosso blog</span>
               <Image src={ArrrowIcon} alt='Ícone seta' />
             </LineButton>
@@ -69,26 +70,36 @@ export function Blog() {
           </TopSide>
           <BottomSide>
             <Swiper
-                spaceBetween={35}
-                slidesPerView={4}
-                loop={true}
-                autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                }}
-                pagination={{ clickable: true }}
-                onSwiper={(swiper) => (swiperRef.current = swiper)}
-                onSlideChange={() => console.log('slide change')}
-                modules={[Autoplay, Pagination, Navigation]}
-                className='swiper-wrapper'
+              spaceBetween={35}
+              slidesPerView={1}
+              loop={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              pagination={{ clickable: true }}
+              onSwiper={(swiper) => (swiperRef.current = swiper)}
+              modules={[Autoplay, Pagination, Navigation]}
+              className='swiper-wrapper'
+              breakpoints={{
+                480: {
+                  slidesPerView: 2,
+                },
+                800: {
+                  slidesPerView: 3,
+                },
+                1000: {
+                  slidesPerView: 4,
+                },
+              }}
             >
-                <SwiperSlide><BlogPost /></SwiperSlide>
-                <SwiperSlide><BlogPost /></SwiperSlide>
-                <SwiperSlide><BlogPost /></SwiperSlide>
-                <SwiperSlide><BlogPost /></SwiperSlide>
-                <SwiperSlide><BlogPost /></SwiperSlide>
-                <SwiperSlide><BlogPost /></SwiperSlide>
-                <SwiperSlide><BlogPost /></SwiperSlide>
+              <SwiperSlide><BlogPost /></SwiperSlide>
+              <SwiperSlide><BlogPost /></SwiperSlide>
+              <SwiperSlide><BlogPost /></SwiperSlide>
+              <SwiperSlide><BlogPost /></SwiperSlide>
+              <SwiperSlide><BlogPost /></SwiperSlide>
+              <SwiperSlide><BlogPost /></SwiperSlide>
+              <SwiperSlide><BlogPost /></SwiperSlide>
             </Swiper>
           </BottomSide>
         </WrapperBlog>

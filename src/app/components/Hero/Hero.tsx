@@ -1,15 +1,18 @@
 'use client'
+
+import Image from 'next/image';
+
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import { Container } from '../Container';
-import { ArrowIcon, LeftSideHero, MainText, ParagraphText, RightSideHero, StyledHero, Tag, TagText, WrapperButtons, WrapperHero } from './style';
-import Image from 'next/image';
+
+import { ArrowIcon, LeftSideHero, MainText, ParagraphText, RightSideHero, StyledHero, Tag, TagText, WrapperButtons, WrapperHero } from './Hero.style';
 import Theme from '../../theme';
 
+import { Button, IconButton } from '../Button';
+import { Container } from '../Container';
 
 import ManHeroImage from '../../../assets/img/man-using-laptop.png';
 import GlobalIcon from '../../../assets/icon/global.svg';
-import { Button, IconButton } from '../Button';
 import SmarthphoneIcon from '../../../assets/icon/smartphone.svg';
 import ArrowNextIcon from '../../../assets/icon/arrow-next.svg';
 import GraphImg from '../../../assets/img/chart-hero.svg';

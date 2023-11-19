@@ -15,7 +15,7 @@ export const SectionAbout = styled.section`
 export const WrapperAbout = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 3.6rem;
+
     @media(max-width: 830px){
         flex-direction: column;
         text-align: center;
@@ -24,22 +24,29 @@ export const WrapperAbout = styled.div`
 
 //Topo side of the section
 export const TopSideAbout = styled.div`
-    width: 100%;
-    max-width: 41.5rem;
-    @media(max-width: 830px){
-        max-width: 100%;
-    }
-    @media(max-width: 700px){
-        max-width: 35rem;
-    }
 `
 
-export const WrapperLeftSide = styled.div`
-        display: flex;
+export const WrapperTopSide = styled.div`
+    display: flex;   
+    align-items: start;
+    justify-content: space-between;
+    gap: 10.4rem;
+    @media(max-width: 828px){
+        flex-direction: column;
+        align-items: center;
+        gap: 4.8rem;
+    }
 `
 
 export const WrapperTexts = styled.div`
-
+    width: 100%;
+    max-width: 41.5rem;
+    margin-bottom: 4.4rem;
+    @media(max-width: 828px){
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 `
 
 export const Tag = styled.span`
@@ -52,8 +59,14 @@ export const Title = styled.h2`
     font-size: 4.8rem;
     font-weight: 400;
     color: ${theme.colors.dark700};
-    @media(max-width: 930px){
-        font-size: 3.8rem;
+    @media (max-width: 1000px){
+    font-size: 3.8rem;
+    }
+    @media(max-width: 700px){
+        font-size: 2.8rem;
+    }
+    @media(max-width: 375px){
+        font-size: 2.4rem;
     }
 `
 
@@ -80,27 +93,53 @@ export const TextList = styled.p`
 `
 
 export const WrapperImages = styled.div`
-    margin-top: 4.4rem;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     gap: 19.3rem;
+    width: 100%;
+    max-width: 38.302rem;
+    .nextIcon{
+        align-self: flex-end;
+    }
+    @media(max-width: 828px){
+        gap: 0;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 `
 
 //Bottom side of the section
 export const BottomSideAbout = styled.div`
-    width: 100%;
-    max-width: 69.6rem;
+
 `
 
-export const WrapperRightSide = styled.div`
+export const WrapperBottomSide = styled.div`
+    margin-top: 4.8rem;
     display: flex;
+    gap: 13.598rem;
+    @media(max-width: 1100px){
+        gap: 11.5rem;
+    }
+    @media(max-width: 1000px){
+        gap: 9.5rem;
+    }
+    @media(max-width: 828px){
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 4rem;
+        .nextIcon{
+            display: none;
+        }
+    }
 `
 
 export const Video = styled.div`
     position: relative;
-    margin-bottom: 3.9rem;
-    height: 37.6rem;
+    width: 100%;
+    max-width: 69.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,10 +169,14 @@ export const Video = styled.div`
 `
 
 export const VideoText = styled.p`
+    margin-top: 3.9rem;
     font-size: 1.8rem;
     font-weight: 400;
     width: 100%;
     max-width: 65.4rem;
+    @media(max-width: 1200px){
+        margin-top: 0rem;
+    }
     @media(max-width: 1000px){
         font-size: 1.6rem;
     }

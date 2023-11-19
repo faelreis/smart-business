@@ -83,7 +83,7 @@ export const AutorJob = styled.p`
 `
 
 export const RightSideBigNumbers = styled.div`
-    @media(max-width: 580px){
+    @media(max-width: 828px){
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -116,6 +116,16 @@ export const BigNumberText = styled.h3`
     @media(max-width: 970px){
         font-size: 4.0rem;
     }
+    span{
+        font-size: 5.6rem;
+    font-weight: 400;
+    @media(max-width: 1180px){
+        font-size: 4.6rem;
+    }
+    @media(max-width: 970px){
+        font-size: 4.0rem;
+    }
+    }
 `
 
 export const BigNumberDesc = styled.p`
@@ -134,8 +144,11 @@ export const DividerLine = styled.div`
     margin: 3.2rem 0rem;
 `
 
-export const SpanText = styled.div`
-    text-align: center;
+export const SpanText = styled.span`
+    text-align: left;
+    @media(max-width: 828px){
+        text-align: center;
+    }
 `
 
 export const RectangleTopBg = styled.div`

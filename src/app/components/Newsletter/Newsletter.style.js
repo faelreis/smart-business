@@ -7,6 +7,9 @@ export const SectionNewsletter = styled.section`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    @media (max-width: 828px){
+        max-width: 6.4rem 0rem;
+    }
 `
 
 export const WrapperNewsletter = styled.div`
@@ -27,6 +30,15 @@ export const Title = styled.h2`
     font-weight: 400;
     text-align: center;
     margin: 1.5rem 0rem 0.8rem 0rem;
+    @media(max-width: 1000px){
+        font-size: 3.8rem;
+    }
+    @media(max-width: 700px){
+        font-size: 2.8rem;
+    }
+    @media(max-width: 375px){
+        font-size: 2.4rem;
+    }
 `
 
 export const Paragraph = styled.p`

@@ -1,8 +1,10 @@
 'use client'
 
-import { Container } from '../Container';
-import { InputNewsletter, Paragraph, SectionNewsletter, Tag, Title, WrapperNewsletter, WrapperInputNewsletter, ButtonNewsletter } from './Newsletter.style';
 import Image from 'next/image';
+
+import { InputNewsletter, Paragraph, SectionNewsletter, Tag, Title, WrapperNewsletter, WrapperInputNewsletter, ButtonNewsletter } from './Newsletter.style';
+
+import { Container } from '../Container';
 
 import EmailIcon from '../../../assets/icon/email.svg';
 

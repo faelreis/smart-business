@@ -1,7 +1,10 @@
 'use client'
-import { Container } from "../Container";
+
 import Image from 'next/image';
+
 import { Box, LeftSide, RightSide, SalesDesc, SalesNumber, SectionMethodology, StarBox, Step, StepDesc, StepTitle, Tag, Title, WrapperImages, WrapperMethodology, WrapperSalesNumber, WrapperSteps, WrapperText } from './Methodology.style';
+
+import { Container } from "../Container";
 
 import Cursor from '../../../assets/img/cursor.png';
 import LaptopMockup from '../../../assets/img/laptop-mockup.jpg';
@@ -21,7 +24,7 @@ export function Methodology(){
                                 <SalesNumber>1900</SalesNumber>
                                 <SalesDesc>vendas realizadas</SalesDesc>
                             </WrapperSalesNumber>
-                            <Image src={LaptopMockup} alt='Dashboard Smart Business'/>
+                            <Image src={LaptopMockup} alt='Dashboard Smart Business' className="laptopMockup"/>
                         </WrapperImages>
                     </LeftSide>
                     <RightSide>

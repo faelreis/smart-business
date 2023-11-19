@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 
-import { StyledHeader, WrapperHeader, Nav } from './style';
+import { StyledHeader, WrapperHeader, Nav } from './Header.style';
 import Theme from '../../theme';
 
 import { Logo } from './components/Logo';

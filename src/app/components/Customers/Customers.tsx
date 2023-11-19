@@ -1,7 +1,9 @@
 'use client'
+
+import { SectionCustomers, WrapperCustomers } from './Customers.style';
+
+import { LogoCustomer } from './components/LogoCustomer';
 import { Container } from "../Container";
-import { SectionCustomers, WrapperCustomers } from './Customer.style';
-import { LogoCustomer } from './LogoCustomer';
 
 import Google from '../../../assets/logo/customer/google.svg';
 import Spotify from '../../../assets/logo/customer/spotify.svg';
