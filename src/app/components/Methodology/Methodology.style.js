@@ -119,7 +119,6 @@ export const SalesDesc = styled.p`
     font-weight: 400;
 `
 
-//Right
 export const RightSide = styled.div`
     margin-top: 5.9rem;
     width: 100%;
@@ -141,7 +140,6 @@ export const Step = styled.div`
         position: absolute;
         content: "";
         background: url('./line-step.svg');
-        /* border-left: 2px dashed #97A5FF; */
         width: 0.2rem;
         height: 6.4rem;
         bottom: -6.5rem;
