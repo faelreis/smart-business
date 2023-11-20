@@ -4,12 +4,12 @@ import theme from '../../../theme';
 
 const fadeIn = keyframes`
   from {
-    transform: translateY(30px);
+    transform: translateY(100%);
     opacity: 0;
   }
 
   to {
-    transform: translateY(0px);
+    transform: translateY(0);
     opacity: 1;
   }
 `;

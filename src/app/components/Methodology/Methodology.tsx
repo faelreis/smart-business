@@ -18,13 +18,13 @@ export function Methodology(){
                     <LeftSide>
                         <Tag>Entenda como funciona</Tag>
                         <Title>Veja como aplicamos nossa metodologia</Title>
-                        <WrapperImages>
-                            <WrapperSalesNumber>
+                        <WrapperImages className='desktop'>
+                            <WrapperSalesNumber data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
                                 <Image src={Cursor} alt='Cursor mouse'/>
                                 <SalesNumber>1900</SalesNumber>
                                 <SalesDesc>vendas realizadas</SalesDesc>
                             </WrapperSalesNumber>
-                            <Image src={LaptopMockup} alt='Dashboard Smart Business' className="laptopMockup"/>
+                            <Image data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" src={LaptopMockup} alt='Dashboard Smart Business' className="laptopMockup"/>
                         </WrapperImages>
                     </LeftSide>
                     <RightSide>
@@ -66,6 +66,14 @@ export function Methodology(){
                             </Step>
                         </WrapperSteps>
                     </RightSide>
+                    <WrapperImages className='mobile'>
+                            <WrapperSalesNumber data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
+                                <Image src={Cursor} alt='Cursor mouse' />
+                                <SalesNumber>1900</SalesNumber>
+                                <SalesDesc>vendas realizadas</SalesDesc>
+                            </WrapperSalesNumber>
+                            <Image data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" src={LaptopMockup} alt='Dashboard Smart Business' className="laptopMockup"/>
+                        </WrapperImages>
                 </WrapperMethodology>
             </Container>
         </SectionMethodology>

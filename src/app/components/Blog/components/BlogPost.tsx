@@ -1,26 +1,24 @@
 'use client'
 import Image from 'next/image';
-import Link from 'next/link';
 import { Description, Job, Name, Post, Type, Date, WrapperAutor, WrapperInfos, WrapperPost, Wrapperassignment, CoverPost } from './BlogPost.style';
-import ExampleAuthor from '../../../../assets/img/blog/woman-pointing-her-smartphone-smiling.jpg';
-import ExamplateAuthor2 from '../../../../assets/img/blog/madelyn-carder.png';
+import { Blog } from '@/app/types/blog';
 
-export function BlogPost(){
+export function BlogPost( { description, type, date, author, thumbnail, authorProfile }: Blog ){
     return(
         <Post>
             <WrapperPost>
                 <CoverPost>
-                    <Image src={ExampleAuthor} alt={'name'} />
+                    <Image width={280} height={340} src={thumbnail.url} alt={description} />
                 </CoverPost>
                 <WrapperInfos>
-                    <Type>Business</Type>
-                    <Date>Outubro 2021</Date>
+                    <Type>{type}</Type>
+                    <Date>{date}</Date>
                 </WrapperInfos>
-                <Description>Sollicitudin a sagittis, risus nisl, fermentum, tincidunt dolor</Description>
+                <Description>{description}</Description>
                 <WrapperAutor>
-                    <Image src={ExamplateAuthor2} alt={'name'} />
+                    <Image width={48} height={48} src={authorProfile.url} alt={author} />
                     <Wrapperassignment>
-                        <Name>Savannah Nguyen</Name>
+                        <Name>{author}</Name>
                         <Job>Autor</Job>
                     </Wrapperassignment>
                 </WrapperAutor>

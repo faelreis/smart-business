@@ -14,7 +14,7 @@ export const WrapperMethodology = styled.div`
     @media(max-width: 1000px){
         flex-direction: column;
         align-items: center;
-        gap: 4rem;
+        gap: 0px;
     }
 `
 
@@ -56,6 +56,19 @@ export const WrapperImages = styled.div`
     display: flex;
     align-items: end;
     gap: 3.2rem;
+    &.desktop{
+        display: none;
+        @media(min-width: 1000px){
+            display: flex;
+        }
+    }
+    &.mobile{
+        display: none;
+        margin-top: 0rem;
+        @media(max-width: 1000px){
+            display: flex;
+        }
+    }
     @media(max-width: 1080px){
         .laptopMockup{
             max-width: 80%;

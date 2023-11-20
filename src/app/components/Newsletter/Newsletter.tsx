@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 
-import { InputNewsletter, Paragraph, SectionNewsletter, Tag, Title, WrapperNewsletter, WrapperInputNewsletter, ButtonNewsletter } from './Newsletter.style';
+import { InputNewsletter, Paragraph, SectionNewsletter, Tag, Title, WrapperNewsletter, WrapperInputNewsletter, ButtonNewsletter, ButtonNewsletterMobile } from './Newsletter.style';
 
 import { Container } from '../Container';
 
@@ -22,6 +22,7 @@ export function Newsletter(){
                         <InputNewsletter placeholder='Insira seu melhor e-mail' type='text' />
                         <ButtonNewsletter>Cadastrar</ButtonNewsletter>
                     </WrapperInputNewsletter>
+                    <ButtonNewsletterMobile>Cadastrar</ButtonNewsletterMobile>
                 </WrapperNewsletter>
             </Container>
         </SectionNewsletter>

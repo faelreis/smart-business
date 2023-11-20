@@ -74,6 +74,9 @@ export const InputNewsletter = styled.input`
         font-size: 1.6rem;
         font-weight: 400;
     }
+    @media(max-width: 500px){
+        padding: 2rem;
+    }
 `
 
 export const ButtonNewsletter = styled.button`
@@ -86,5 +89,26 @@ export const ButtonNewsletter = styled.button`
     transition: all .3s ease-in-out;
     &:hover{
         background-color: ${theme.colors.primaryDark};
+    }
+    @media(max-width: 500px){
+        display: none;
+    }
+`
+
+export const ButtonNewsletterMobile = styled.button`
+    margin-top: 1.6rem;
+    width: 100%;
+    padding: 2rem;
+    background-color: ${theme.colors.primaryMain};
+    color: ${theme.colors.gray1};
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    &:hover{
+        background-color: ${theme.colors.primaryDark};
+    }
+    @media(min-width: 500px){
+        display: none;
     }
 `

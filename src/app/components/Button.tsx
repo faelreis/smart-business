@@ -23,7 +23,7 @@ const baseStyles = css`
 export const Button = styled.a<{ $outline?: boolean; $primary?: boolean; icon?: string }>`
   display: inline-block;
   ${baseStyles}
-  padding: ${({ $outline, theme }) => ($outline && '1rem 1.6rem')};
+  padding: ${({ $outline }) => ($outline && '1rem 1.6rem')};
   color: ${({ $outline, $primary, theme }) => ($outline ? theme.colors.primaryMain : $primary && theme.colors.gray1)};
   background-color: ${({ $outline, $primary, theme }) => ($outline ? 'transparent' : $primary && theme.colors.primaryMain)};
   border: 1px solid ${theme.colors.primaryMain};
@@ -35,7 +35,7 @@ export const Button = styled.a<{ $outline?: boolean; $primary?: boolean; icon?: 
 
   &:hover {
     background-color: ${({ $outline, $primary, theme }) => ($outline ? theme.colors.primaryMain : $primary && theme.colors.primaryDark)};
-    color: ${({ $outline, $primary, theme }) => ($outline && theme.colors.gray1)};
+    color: ${({ $outline, theme }) => ($outline && theme.colors.gray1)};
     img{
       animation: ${FadeIn} .5s ease;
       opacity: 1;
@@ -43,6 +43,18 @@ export const Button = styled.a<{ $outline?: boolean; $primary?: boolean; icon?: 
     }
   }
 `;
+
+export const primaryButton = styled.a`
+  padding: 16px 32px 17px 32px;
+  align-items: center;
+  color: ${theme.colors.gray1};
+  background-color: ${theme.colors.primaryMain};
+  cursor: pointer;
+  transition: all .3s ease;
+  &:hover{
+    background-color: ${theme.colors.primaryDark};
+  }
+`
 
 export const IconButton = styled.a`
     cursor: pointer;

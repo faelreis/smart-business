@@ -9,8 +9,44 @@ import { Hero } from "./components/Hero/Hero";
 import { Methodology } from "./components/Methodology/Methodology";
 import { Newsletter } from "./components/Newsletter/Newsletter";
 import { TopBarMessage } from "./components/TopBarMessage/TopBarMessage";
+import { HomePageData } from "./types/page-info";
+import { fetchHygraphQuery } from "./utils/fetch-hygraph-query";
 
-export default function Home() {
+const getPageData = async (): Promise<HomePageData> => {
+  const query = `
+    query Pages {
+      pages {
+        createdAt
+        heroParagraph
+        heroTag
+        heroTitle
+        id
+        publishedAt
+        slug
+        updatedAt
+      }
+      blogs {
+        author
+        date
+        description
+        type
+        thumbnail {
+          url
+        }
+        authorProfile {
+          url
+        }
+      }
+    }
+  `;
+
+  return fetchHygraphQuery(query);
+};
+
+export default async function Home() {
+
+  const pageData  = await getPageData();
+
   return (
     <>
       <TopBarMessage />
@@ -20,7 +56,7 @@ export default function Home() {
       <About />
       <Customers />
       <Methodology />
-      <Blog />
+      <Blog homeInfo={pageData } />
       <Faq />
       <Newsletter />
       <Footer />

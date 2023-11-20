@@ -21,7 +21,7 @@ export function About(){
                             <WrapperTexts>
                                 <Tag>Sobre a empresa</Tag>
                                 <Title>Criando e inovando desde 1988</Title>
-                                <WrapperList>
+                                <WrapperList data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
                                     <List>
                                         <Image src={CheckIcon} alt='Ícone verificar'/>
                                         <TextList>Sagittis sed cursus sed malesuada ultrices</TextList>
@@ -45,10 +45,10 @@ export function About(){
                     <BottomSideAbout>
                         <WrapperBottomSide>
                             <WrapperImages>
-                                <Image src={ArrowNextIcon} alt='Ícone seta' className='nextIcon'/>
-                                <Image src={SupplementaryImage} alt='Mulher usando celular, ilustração 3D' className='woman3d'/>
+                                <Image src={ArrowNextIcon} alt='Ícone seta' className='nextIcon' data-aos="fade-down" data-aos-once="true" data-aos-duration="1000"/>
+                                <Image src={SupplementaryImage} alt='Mulher usando celular, ilustração 3D' className='woman3d' data-aos="fade-right" data-aos-once="true" data-aos-duration="1000"/>
                             </WrapperImages>
-                            <VideoText>Suscipit pellentesque praesent auctor molestie massa nunc vitae. Felis eget est ut gravida in maecenas. Tempus in in in congue proin.<br/><br/>Sem in feugiat id dui bibendum. Nunc ut mauris congue amet. Facilisis amet enim pellentesque eu suspendisse diam sit. Bibendum pharetra malesuada aliquam hendrerit consectetur neque. <strong>Gravida rhoncus enim a sodales</strong> feugiat senectus aenean felis. Vitae purus, amet semper pulvinar.</VideoText>
+                            <VideoText data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">Suscipit pellentesque praesent auctor molestie massa nunc vitae. Felis eget est ut gravida in maecenas. Tempus in in in congue proin.<br/><br/>Sem in feugiat id dui bibendum. Nunc ut mauris congue amet. Facilisis amet enim pellentesque eu suspendisse diam sit. Bibendum pharetra malesuada aliquam hendrerit consectetur neque. <strong>Gravida rhoncus enim a sodales</strong> feugiat senectus aenean felis. Vitae purus, amet semper pulvinar.</VideoText>
                         </WrapperBottomSide>
                     </BottomSideAbout>
                 </WrapperAbout>

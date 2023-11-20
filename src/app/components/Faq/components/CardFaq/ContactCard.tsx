@@ -1,14 +1,21 @@
 'use client'
-import Image from 'next/image';
-import { Card, Description, Title } from './CardFaq.style';
-import WhatsAppIcon from '../../../../../assets/icon/whatsapp.svg';
 
-export function ContactCard(){
+import Image from 'next/image';
+
+import { Card, Description, Title } from './CardFaq.style';
+
+type ContactCardProps = {
+    iconCard: string;
+    titleCard: string;
+    descriptionCard: string;
+}
+
+export function ContactCard( { iconCard, titleCard, descriptionCard }: ContactCardProps ){
     return(
         <Card>
-            <Image src={WhatsAppIcon} alt="Ícone"/>
-            <Title>Dúvidas?</Title>
-            <Description>Envie uma mensagem para nosso time</Description>
+            <Image src={iconCard} alt="Ícone"/>
+            <Title>{titleCard}</Title>
+            <Description>{descriptionCard}</Description>
         </Card>
     )
 }

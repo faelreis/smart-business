@@ -79,6 +79,12 @@ export const NavigateButtons = styled.div`
 
 
 export const BottomSide = styled.div`
+    @media(max-width: 828px){
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
     .swiper-wrapper{
         padding-bottom: 4rem;
         .swiper-pagination{
@@ -89,5 +95,12 @@ export const BottomSide = styled.div`
             top: 0;
         }
     }
-    
+    .btnLineMobile{
+        display: none;
+    }
+    @media(max-width: 828px){
+        .btnLineMobile{
+            display: flex;
+        }
+    }
 `

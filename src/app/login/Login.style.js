@@ -2,24 +2,22 @@ import styled from 'styled-components';
 import theme from '../theme';
 
 export const LoginPage = styled.section`
-    height: 100vh;
-    overflow: hidden;
-    @media(max-width: 970px){
-        overflow: auto;
-    }
+
 `
 
 export const WrapperLogin = styled.div`
+    height: 100%;
     display: flex;
     @media(max-width: 970px){
         flex-direction: column-reverse;
     }
 `
 
-export const LeftSide = styled.div`
-    width: 80%;
+export const LeftSide = styled.aside`
     height: 100vh;
+    width: 70%;
     background-color: ${theme.colors.primaryMain};
+    display: flex;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -58,7 +56,7 @@ export const Title = styled.h1`
     }
 `
 
-export const RightSide = styled.div`
+export const RightSide = styled.main`
     width: 100%;
     padding: 8.8rem 18.7rem 18.7rem 24.7rem;
     background-color: #FFFFFF;

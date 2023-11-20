@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 import theme from '../../theme';
 
-import ThumbnailVideo from '../../../assets/img/thumb-video.jpg';
-
-
-
 export const SectionAbout = styled.section`
     padding: 11.7rem 0rem 12rem 0rem;
     @media(max-width: 830px){
@@ -22,7 +18,6 @@ export const WrapperAbout = styled.div`
     }
 `
 
-//Topo side of the section
 export const TopSideAbout = styled.div`
 `
 
@@ -82,10 +77,6 @@ export const List = styled.li`
     gap: 1.6rem;
 `
 
-export const Image = styled.img` //Verificar!!!!!
-
-`
-
 export const TextList = styled.p`
     font-size: 1.4rem;
     font-weight: 400;
@@ -111,7 +102,7 @@ export const WrapperImages = styled.div`
     }
 `
 
-//Bottom side of the section
+
 export const BottomSideAbout = styled.div`
 
 `

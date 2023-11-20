@@ -9,9 +9,13 @@ const archivo = Archivo({
 })
 
 export const metadata: Metadata = {
-  title: 'Smart Business',
-  description: 'O segredo para um negócio de sucesso!',
-}
+  title: "Smart Business | Rafael Reis",
+  description: "O segredo para um negócio de sucesso!",
+  icons:{
+    icon: './favicon.png',
+    apple: './favicon.png',
+  }
+};
 
 export default function RootLayout({
   children,

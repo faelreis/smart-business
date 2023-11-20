@@ -2,7 +2,11 @@
 
 import Image from 'next/image';
 
-import React from 'react';
+import { useEffect } from 'react';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { TypeAnimation } from 'react-type-animation';
 
 import { ArrowIcon, LeftSideHero, MainText, ParagraphText, RightSideHero, StyledHero, Tag, TagText, WrapperButtons, WrapperHero } from './Hero.style';
@@ -21,6 +25,11 @@ import ChartIcon from '../../../assets/img/chat-hero.svg';
 
 
 export function Hero() {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
     <StyledHero>
       <Container>
@@ -52,17 +61,17 @@ export function Hero() {
               Pellentesque rutrum turpis non est turpis pretium morbi urna. Erat dictum blandit aliquam purus sed rhoncus.
             </ParagraphText>
             <WrapperButtons>
-              <Button $primary theme={Theme}>Cadastrar meu negócio</Button>
+              <Button href='/login' $primary theme={Theme}>Cadastrar meu negócio</Button>
               <IconButton>
                 <Image src={SmarthphoneIcon} alt="Celular ícone" />
                 Fale conosco
               </IconButton>
             </WrapperButtons>
-            <ArrowIcon>
+            <ArrowIcon data-aos="fade-down" data-aos-once="true" data-aos-duration="1000">
               <Image src={ArrowNextIcon} alt="ícone seta" />
             </ArrowIcon>
           </LeftSideHero>
-          <RightSideHero>
+          <RightSideHero data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
             <Image src={ChartIcon} alt="ícone de bate-papo" className='hero-section__image-chat'/>
             <Image src={GraphImg} alt="Gráfico empresarial" className='hero-section__image-graph'/>
             <Image src={ManHeroImage} quality={100} alt="Homem usando notebook, ilustração 3D" className='hero-section__image-main'/>

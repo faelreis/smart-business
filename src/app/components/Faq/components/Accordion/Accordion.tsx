@@ -4,7 +4,15 @@ import { Answer, CardAccordion, Panel, Question, Number, WrapperInfos } from './
 import Image from 'next/image';
 import PlusIcon from '../../../../../assets/icon/plus-accordion.svg';
 
-export function Accordion() {
+type AccordionProps = {
+  numberingOrder: string;
+  question: string;
+  answer: string;
+}
+
+
+export function Accordion( { numberingOrder, question, answer }: AccordionProps ) {
+
     const [isVisible, setIsVisible] = useState(false);
 
     const toggleVisibility = () => {
@@ -16,14 +24,12 @@ export function Accordion() {
     <CardAccordion onClick={toggleVisibility}>
       <Panel>
         <WrapperInfos>
-          <Number>01</Number>
-          <Question>Há algum conteúdo que não migrará com a minha Página?</Question>
+          <Number>{numberingOrder}</Number>
+          <Question>{question}</Question>
         </WrapperInfos>
         <Image src={PlusIcon} alt="Ícone maximizar"/>
       </Panel>
-        <Answer className={`element ${isVisible ? 'visible' : 'hidden'}`}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </Answer>
+        <Answer className={`element ${isVisible ? 'visible' : 'hidden'}`}>{answer}</Answer>
     </CardAccordion>
   );
 }
