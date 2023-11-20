@@ -103,18 +103,6 @@ export function Blog( { homeInfo }: HomeSectionProps ) {
                   />
                 </SwiperSlide>
               ))}
-              {homeInfo.blogs.map((blogPost: any, index: number) => (
-                <SwiperSlide key={index}>
-                  <BlogPost
-                    type={blogPost.type}
-                    date={blogPost.date}
-                    description={blogPost.description}
-                    author={blogPost.author}
-                    authorProfile={blogPost.authorProfile}
-                    thumbnail={blogPost.thumbnail}
-                  />
-                </SwiperSlide>
-              ))}
             </Swiper>
             <LineButton className='btnLineMobile'><span>Conheça nosso blog</span><Image src={ArrrowIcon} alt='Ícone seta' /></LineButton>
           </BottomSide>
