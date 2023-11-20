@@ -2,7 +2,7 @@ export const fetchHygraphQuery = async <T>(
   query: string,
   revalidate?: number
 ): Promise<T> => {
-  const url = process.env.HYGRAPH_URL ?? '';
+  const url = process.env.HYGRAPH_URL!;
   const response = await fetch(url, {
     method: 'POST',
     headers: {
