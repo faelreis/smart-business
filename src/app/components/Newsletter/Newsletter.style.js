@@ -3,7 +3,7 @@ import theme from '../../theme';
 
 export const SectionNewsletter = styled.section`
     padding: 8.9rem 0rem 11.5rem 0rem;
-    background-image: url('./bg-newsletter.jpg');
+    background-image: url('./bg-newsletter.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

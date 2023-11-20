@@ -42,7 +42,7 @@ export const LostPassword = styled.div`
 `
 
 export const LeftSide = styled.div`
-    background-image: url('./bg-lost-password.jpg');
+    background-image: url('./bg-lost-password.webp');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
