@@ -1,4 +1,4 @@
-![wireframe-smartbusiness](https://github.com/faelreis/smart-business/assets/87779561/bd24efee-0eea-4a9a-8797-f41fa881c460)
+![wireframe-smartbusiness](https://github.com/faelreis/smart-business/assets/87779561/ff0a64ec-04f5-48c5-a286-8ea9212dde9e)
 
 ## Link da aplicação
 [https://rafaelreisfranco-smart-business.vercel.app/](https://rafaelreisfranco-smart-business.vercel.app/)
