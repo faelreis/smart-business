@@ -28,7 +28,7 @@ export function Faq(){
                             <Title>Perguntas mais frequentes</Title>
                             <Paragraph>Separamos algumas perguntas e respostas que podem te ajudar na sua decisão</Paragraph>
                             <Button href='/login' $primary theme={Theme}>Cadastrar meu negócio</Button>
-                            <IconButton data-aos="fade-left" data-aos-once="true" data-aos-duration="1000" theme={Theme}><Image src={SmartphoneIcon} alt='Ícone Login'/>Fale conosco</IconButton>
+                            <IconButton href='/login' data-aos="fade-left" data-aos-once="true" data-aos-duration="1000" theme={Theme}><Image src={SmartphoneIcon} alt='Ícone Login'/>Fale conosco</IconButton>
                         </LeftSide>
                         <RightSide>
                             <Accordion numberingOrder='01' question='Quais recursos ainda posso acessar nas novas Páginas?' answer='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'/>

@@ -27,7 +27,7 @@ export const Copyright = styled.span`
     color: ${theme.colors.dark300};
 `
 
-export const WrapperSocial = styled.ul`
+export const WrapperSocial = styled.div`
     display: flex;
     align-items: center;
     gap: 1.6rem;

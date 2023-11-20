@@ -69,7 +69,7 @@ export const Autor = styled.div`
 
 `
 
-export const AutorName = styled.h4`
+export const AutorName = styled.h3`
     font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 3px;

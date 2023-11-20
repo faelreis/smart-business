@@ -62,7 +62,7 @@ export function Hero() {
             </ParagraphText>
             <WrapperButtons>
               <Button href='/login' $primary theme={Theme}>Cadastrar meu negócio</Button>
-              <IconButton>
+              <IconButton href='/login'>
                 <Image src={SmarthphoneIcon} alt="Celular ícone" />
                 Fale conosco
               </IconButton>
