@@ -74,7 +74,7 @@ export const InputNewsletter = styled.input`
         font-size: 1.6rem;
         font-weight: 400;
     }
-    @media(max-width: 500px){
+    @media(max-width: 600px){
         padding: 2rem;
     }
 `
@@ -90,7 +90,7 @@ export const ButtonNewsletter = styled.button`
     &:hover{
         background-color: ${theme.colors.primaryDark};
     }
-    @media(max-width: 500px){
+    @media(max-width: 600px){
         display: none;
     }
 `
@@ -108,7 +108,7 @@ export const ButtonNewsletterMobile = styled.button`
     &:hover{
         background-color: ${theme.colors.primaryDark};
     }
-    @media(min-width: 500px){
+    @media(min-width: 600px){
         display: none;
     }
 `

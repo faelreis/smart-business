@@ -66,6 +66,7 @@ export const IconButton = styled.a`
     color: ${theme.colors.dark500};
     background-color: transparent;
     border: none;
+    font-weight: 600;
     &:hover{
         text-decoration: underline;
     }

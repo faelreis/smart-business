@@ -204,7 +204,7 @@ export const Tag = styled.div`
 `;
 
 export const TagText = styled.span`
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.4rem;
   color: ${theme.colors.dark500};
 `;
@@ -226,14 +226,18 @@ export const MainText = styled.h1`
   }
 
   @media(max-width: 1200px){
-    font-size: 5.5rem;
+    font-size: 5.0rem;
     max-width: 500px;
     strong{
-        font-size: 5.5rem;
+        font-size: 5.0rem;
     }
   }
   @media(max-width: 1040px){
     max-width: 40rem;
+    font-size: 4.5;
+    strong{
+        font-size: 4.5rem;
+    }
   }
   @media(max-width: 970px){
     max-width: 600px;

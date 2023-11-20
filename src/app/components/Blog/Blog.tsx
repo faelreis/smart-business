@@ -13,7 +13,7 @@ import 'swiper/css/pagination';
 import ArrowBlogIcon from '../../../assets/icon/arrow-blog.svg';
 import ArrrowIcon from '../../../assets/icon/arrow.svg';
 import SwiperCore from 'swiper/core';
-import { Autoplay, Pagination, Navigation, FreeMode } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import { HomePageData } from '@/app/types/page-info';
 
@@ -70,7 +70,6 @@ export function Blog( { homeInfo }: HomeSectionProps ) {
           <Swiper
               spaceBetween={35}
               slidesPerView={1}
-              freeMode={true}
               loop={true}
               autoplay={{
                 delay: 2500,
@@ -78,7 +77,7 @@ export function Blog( { homeInfo }: HomeSectionProps ) {
               }}
               pagination={{ clickable: true }}
               onSwiper={(swiper) => (swiperRef.current = swiper)}
-              modules={[Autoplay, Pagination, Navigation, FreeMode]}
+              modules={[Autoplay, Pagination, Navigation]}
               className='swiper-wrapper'
               breakpoints={{
                 480: {
