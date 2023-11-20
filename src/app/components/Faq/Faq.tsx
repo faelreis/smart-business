@@ -27,7 +27,7 @@ export function Faq(){
                             <Tag>Tire suas dúvidas</Tag>
                             <Title>Perguntas mais frequentes</Title>
                             <Paragraph>Separamos algumas perguntas e respostas que podem te ajudar na sua decisão</Paragraph>
-                            <Button $primary theme={Theme}>Cadastrar meu negócio</Button>
+                            <Button href='/login' $primary theme={Theme}>Cadastrar meu negócio</Button>
                             <IconButton data-aos="fade-left" data-aos-once="true" data-aos-duration="1000" theme={Theme}><Image src={SmartphoneIcon} alt='Ícone Login'/>Fale conosco</IconButton>
                         </LeftSide>
                         <RightSide>

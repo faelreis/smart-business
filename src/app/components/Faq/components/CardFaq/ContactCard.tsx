@@ -12,7 +12,7 @@ type ContactCardProps = {
 
 export function ContactCard( { iconCard, titleCard, descriptionCard }: ContactCardProps ){
     return(
-        <Card>
+        <Card href='#'>
             <Image src={iconCard} alt="Ícone"/>
             <Title>{titleCard}</Title>
             <Description>{descriptionCard}</Description>

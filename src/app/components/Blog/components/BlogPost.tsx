@@ -5,7 +5,7 @@ import { Blog } from '@/app/types/blog';
 
 export function BlogPost( { description, type, date, author, thumbnail, authorProfile }: Blog ){
     return(
-        <Post>
+        <Post href='#'>
             <WrapperPost>
                 <CoverPost>
                     <Image width={280} height={340} src={thumbnail.url} alt={description} />

@@ -22,11 +22,11 @@ export function Footer(){
                     </Logo>
                     <Copyright>© 2022 SmartBusiness. Todos os direitos reservados</Copyright>
                     <WrapperSocial>
-                        <LogoSocial><Image src={TwitterLogo} alt="Logo Twitter" /></LogoSocial>
-                        <LogoSocial><Image src={LinkedinLogo} alt="Logo LinkedIn" /></LogoSocial>
-                        <LogoSocial><Image src={InstagramLogo} alt="Logo Instagram" /></LogoSocial>
-                        <LogoSocial><Image src={FacebookLogo} alt="Logo Facebook" /></LogoSocial>
-                    </WrapperSocial>
+                        <LogoSocial href='#'><Image src={TwitterLogo} alt="Logo Twitter" /></LogoSocial>
+                        <LogoSocial href='#'><Image src={LinkedinLogo} alt="Logo LinkedIn" /></LogoSocial>
+                        <LogoSocial href='#'><Image src={InstagramLogo} alt="Logo Instagram" /></LogoSocial>
+                        <LogoSocial href='#'><Image src={FacebookLogo} alt="Logo Facebook" /></LogoSocial>
+                    </WrapperSocial >
                     <CreatedBy href='https://insany.design/' target='_blank'>Desenvolvido por <strong>Insany Design</strong></CreatedBy>
                 </WrapperFooter>
             </Container>
