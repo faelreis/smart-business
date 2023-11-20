@@ -88,7 +88,14 @@ export const BottomSide = styled.div`
     .swiper-wrapper{
         padding-bottom: 4rem;
         .swiper-pagination{
-
+            .swiper-pagination-bullet{
+                background-color: ${theme.colors.primaryMain};
+                opacity: 1;
+            }
+            .swiper-pagination-bullet-active{
+                background-color: transparent;
+                border: 1px solid ${theme.colors.primaryMain};
+            }
         }
         .swiper-button-prev:after, .swiper-button-next:after{
             color: ${theme.colors.primaryMain};
