@@ -30,6 +30,10 @@ body {
   background-color: #FFFFFF;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 button, 
 input {
     font-family: inherit;

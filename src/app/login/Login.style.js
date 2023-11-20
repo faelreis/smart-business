@@ -14,7 +14,7 @@ export const WrapperLogin = styled.div`
 `
 
 export const LeftSide = styled.aside`
-    height: 100vh;
+    height: auto;
     width: 70%;
     background-color: ${theme.colors.primaryMain};
     display: flex;

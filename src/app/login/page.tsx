@@ -23,10 +23,12 @@ export default function Login() {
   
     const openModal = () => {
       setIsModalOpen(true);
+      document.body.classList.add('modal-open');
     };
   
     const closeModal = () => {
       setIsModalOpen(false);
+      document.body.classList.remove('modal-open');
     };
   
     return (
