@@ -36,7 +36,6 @@ export const WrapperTopSide = styled.div`
 export const WrapperTexts = styled.div`
     width: 100%;
     max-width: 41.5rem;
-    margin-bottom: 4.4rem;
     @media(max-width: 828px){
         display: flex;
         align-items: center;
@@ -69,6 +68,7 @@ export const WrapperList = styled.ul`
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
+    margin-bottom: 2.5rem;
 `
 
 export const List = styled.li`
@@ -108,7 +108,6 @@ export const BottomSideAbout = styled.div`
 `
 
 export const WrapperBottomSide = styled.div`
-    margin-top: 4.8rem;
     display: flex;
     gap: 13.598rem;
     @media(max-width: 1100px){
@@ -170,5 +169,8 @@ export const VideoText = styled.p`
     }
     @media(max-width: 1000px){
         font-size: 1.6rem;
+    }
+    @media(max-width: 828px){
+        margin-top: 3.9rem;
     }
 `
